@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import type { Product } from "./types"
 
 interface ProductItemProps {
@@ -18,7 +19,7 @@ export default function ProductItem({ product, canEdit, onQuantityChange }: Prod
 
   return (
     <div className="flex items-start space-x-4 p-4 bg-gray-50 rounded-lg">
-      <img
+      <Image
         src={product.thumbnail || "/placeholder.svg"}
         alt={product.name}
         className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-md flex-shrink-0"

@@ -74,7 +74,7 @@ export default function AlreadyLoggedInMessage() {
             <h2 className="text-2xl font-bold text-gray-900">Welcome back, {userInfo?.fullName}!</h2>
 
             <div className="space-y-2">
-              <p className="text-gray-600">You're already signed in with</p>
+              <p className="text-gray-600">You&apos;re already signed in with</p>
               <p className="text-teal-600 font-medium">{userInfo?.email}</p>
             </div>
 
